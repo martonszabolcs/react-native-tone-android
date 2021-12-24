@@ -64,7 +64,7 @@ public class ToneAndroidModule extends ReactContextBaseJavaModule {
     void playSound(){
     	try {
     	// WAS STREAM_NOTIFICATION
-    	audioTrack = new AudioTrack(AudioManager.STREAM_SYSTEM,
+    	audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
                 sampleRate, AudioFormat.CHANNEL_OUT_MONO,
                 AudioFormat.ENCODING_PCM_16BIT, numSamples,
                 AudioTrack.MODE_STATIC);
